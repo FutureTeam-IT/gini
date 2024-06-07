@@ -1,5 +1,7 @@
 package it.futurecraft.gini.database;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * A database schema.
  * <p>It specifies how the table for a type should be defined.</p>
@@ -12,6 +14,7 @@ public interface Schema<I> {
      *
      * @return the primary key.
      */
+    @NotNull
     I id();
 
     /**

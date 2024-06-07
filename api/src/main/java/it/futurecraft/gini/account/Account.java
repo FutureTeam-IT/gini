@@ -1,6 +1,7 @@
 package it.futurecraft.gini.account;
 
 import it.futurecraft.gini.database.Schema;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * The schema for players' bank accounts.
@@ -13,6 +14,7 @@ public interface Account extends Schema<String> {
      *
      * @return the username.
      */
+    @NotNull
     String username();
 
     /**

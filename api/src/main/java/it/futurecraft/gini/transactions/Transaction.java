@@ -1,6 +1,10 @@
 package it.futurecraft.gini.transactions;
 
 import it.futurecraft.gini.database.Schema;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.time.LocalDateTime;
 
 /**
  * The schema for transactions.
@@ -21,6 +25,7 @@ public interface Transaction extends Schema<Integer> {
      *
      * @return the sender.
      */
+    @Nullable
     String sender();
 
     /**
@@ -28,5 +33,14 @@ public interface Transaction extends Schema<Integer> {
      *
      * @return the receiver.
      */
+    @Nullable
     String receiver();
+
+    /**
+     * Get the transaction creation date.
+     *
+     * @return the creation date.
+     */
+    @NotNull
+    LocalDateTime createdAt();
 }
