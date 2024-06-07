@@ -14,7 +14,9 @@ repositories {
 }
 
 dependencies {
-    compileOnly("org.jetbrains:annotations:25.0.0")
+    // https://mvnrepository.com/artifact/org.jetbrains/annotations
+    compileOnly("org.jetbrains:annotations:24.1.0")
+
     implementation("net.kyori:adventure-api:4.17.0")
 
     // TESTS
