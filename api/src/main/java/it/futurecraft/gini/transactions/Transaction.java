@@ -1,5 +1,6 @@
 package it.futurecraft.gini.transactions;
 
+import it.futurecraft.gini.account.Account;
 import it.futurecraft.gini.database.Schema;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -26,7 +27,7 @@ public interface Transaction extends Schema<Integer> {
      * @return the sender.
      */
     @Nullable
-    String sender();
+    Account sender();
 
     /**
      * Get the transaction receiver.
@@ -34,7 +35,7 @@ public interface Transaction extends Schema<Integer> {
      * @return the receiver.
      */
     @Nullable
-    String receiver();
+    Account receiver();
 
     /**
      * Get the transaction creation date.
