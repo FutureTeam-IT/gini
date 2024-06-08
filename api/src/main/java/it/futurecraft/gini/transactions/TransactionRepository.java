@@ -15,7 +15,7 @@ public interface TransactionRepository extends Repository<Integer, Transaction> 
     /**
      * Lists all the transaction for a given sender.
      *
-     * @param sender the sender.
+     * @param sender the sender id.
      * @return the list of transactions.
      */
     @NotNull
@@ -24,7 +24,7 @@ public interface TransactionRepository extends Repository<Integer, Transaction> 
     /**
      * Lists all the transaction for a given receiver.
      *
-     * @param receiver the receiver.
+     * @param receiver the receiver id.
      * @return the list of transactions.
      */
     @NotNull
