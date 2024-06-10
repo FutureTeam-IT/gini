@@ -1,6 +1,7 @@
 package it.futurecraft.gini;
 
 import it.futurecraft.gini.account.AccountRepository;
+import it.futurecraft.gini.currency.CurrencyRepository;
 import it.futurecraft.gini.database.ConnectionFactory;
 import it.futurecraft.gini.transactions.TransactionRepository;
 
@@ -27,4 +28,19 @@ public interface GiniAPI {
      * @see AccountRepository
      */
     AccountRepository accountRepository();
+
+    /**
+     * Get the currency repository.
+     *
+     * @return the currency repository.
+     * @see CurrencyRepository
+     */
+    CurrencyRepository currencyRepository();
+
+    /**
+     * Get the version of the API.
+     *
+     * @return the version of the API.
+     */
+    Version version();
 }
